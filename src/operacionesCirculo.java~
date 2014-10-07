@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class operacionesCirculo {
+
+	public static void main (String args[]) {
+
+		double numero1, resultadoArea, resultadoCircunferencia;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("\nIngresa un número: ");
+		numero1 = sc.nextDouble(); // nextDouble --> Cambiar todos los float de los dos archivos a double
+
+		Circulos operaciones = new Circulos(numero1);
+
+		resultadoArea = operaciones.getArea();
+		resultadoCircunferencia = operaciones.getCircunferencia();
+
+		System.out.println("\nEl resultado del AREA es: " + resultadoArea);
+		System.out.println("\nEl resultado de la CIRCUNFERENCIA es: " + resultadoCircunferencia);
+	
+		//System.out.println("\n\nEGUN ONA IZAN!!\n");
+	}
+}
